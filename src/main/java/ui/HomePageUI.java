@@ -25,4 +25,12 @@ public class HomePageUI {
 
     public static By loginButton = By.xpath("//*[@id=\"ctl00_MainContent_LoginControl1_ButtonLogin\"]");
 
+    public static By addProject = By.xpath("//*[.='Add New Project']");
+
+    public static By addProjectTextField = By.xpath("//*[@id=\"NewProjNameInput\"]");
+
+    public static By addProjectButton = By.xpath("//*[@id=\"NewProjNameButton\"]");
+
+
+
 }
