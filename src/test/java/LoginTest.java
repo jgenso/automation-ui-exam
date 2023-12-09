@@ -7,11 +7,12 @@ import task.tasking.Logout;
 import task.tasking.SingUp;
 import task.validations.IsLogoutElement;
 
-public class SignUpTest extends BaseTest {
+public class LoginTest extends BaseTest {
+
 
     @Test
-    public void signup() {
-        SingUp.as(webDriver, "Juan Olivera", "asdf1234", "juan+4@genso.com.bo");
+    public void login() {
+        Login.as(webDriver, "juan+3@genso.com.bo", "asdf1234");
         Assert.assertTrue(IsLogoutElement.visible(webDriver));
         ScreenShotHelper.takeScreenShot(webDriver);
     }

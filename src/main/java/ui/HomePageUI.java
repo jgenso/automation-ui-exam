@@ -17,4 +17,12 @@ public class HomePageUI {
 
     public static By logoutButton = By.xpath("//*[@id=\"ctl00_HeaderTopControl1_LinkButtonLogout\"]");
 
+    public static By login = By.xpath("//*[@id=\"ctl00_MainContent_PanelNotAuth\"]/div[2]/div[1]/div[2]/a");
+
+    public static By loginEmail = By.xpath("//*[@id=\"ctl00_MainContent_LoginControl1_TextBoxEmail\"]");
+
+    public static By loginPassword = By.xpath("//*[@id=\"ctl00_MainContent_LoginControl1_TextBoxPassword\"]");
+
+    public static By loginButton = By.xpath("//*[@id=\"ctl00_MainContent_LoginControl1_ButtonLogin\"]");
+
 }
