@@ -31,6 +31,8 @@ public class HomePageUI {
 
     public static By addProjectButton = By.xpath("//*[@id=\"NewProjNameButton\"]");
 
+    public static By todoTextField = By.xpath("//*[@id=\"NewItemContentInput\"]");
 
+    public static By todoTextButton = By.xpath("//*[@id=\"NewItemAddButton\"]");
 
 }

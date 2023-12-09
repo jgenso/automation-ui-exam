@@ -2,10 +2,7 @@ import Helpers.helper.ScreenShotHelper;
 import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import task.tasking.AddProject;
-import task.tasking.Login;
-import task.tasking.Logout;
-import task.tasking.SingUp;
+import task.tasking.*;
 import task.validations.IsLogoutElement;
 
 import java.util.UUID;
@@ -26,6 +23,13 @@ public class LoginTest extends BaseTest {
         Login.as(webDriver, "juan+3@genso.com.bo", "asdf1234");
         AddProject.as(webDriver, projectName);
         ScreenShotHelper.takeScreenShot(webDriver);
+    }
+
+    @Test
+    public void addTodo() {
+        String todoName = "Tarea completada";
+        Login.as(webDriver, "juan+3@genso.com.bo", "asdf1234");
+        AddTodo.as(webDriver, todoName);
     }
 
 }
