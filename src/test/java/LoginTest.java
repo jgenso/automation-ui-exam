@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import task.tasking.*;
 import task.validations.IsLogoutElement;
+import task.validations.IsProject;
 
 import java.util.UUID;
 
@@ -22,6 +23,7 @@ public class LoginTest extends BaseTest {
         String projectName = "project_" + UUID.randomUUID();
         Login.as(webDriver, "juan+3@genso.com.bo", "asdf1234");
         AddProject.as(webDriver, projectName);
+        Assert.assertTrue(IsProject.visible(webDriver, projectName));
         ScreenShotHelper.takeScreenShot(webDriver);
     }
 
@@ -30,6 +32,7 @@ public class LoginTest extends BaseTest {
         String todoName = "Tarea completada";
         Login.as(webDriver, "juan+3@genso.com.bo", "asdf1234");
         AddTodo.as(webDriver, todoName);
+        Assert.assertTrue(IsProject.visible(webDriver, todoName));
     }
 
 }
