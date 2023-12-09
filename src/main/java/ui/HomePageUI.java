@@ -14,4 +14,7 @@ public class HomePageUI {
     public static By signUpCheckbox = By.xpath("//*[@id=\"ctl00_MainContent_SignupControl1_CheckBoxTerms\"]");
 
     public static By signUpSubmitButton = By.xpath("//*[@id=\"ctl00_MainContent_SignupControl1_ButtonSignup\"]");
+
+    public static By logoutButton = By.xpath("//*[@id=\"ctl00_HeaderTopControl1_LinkButtonLogout\"]");
+
 }
